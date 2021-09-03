@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: gray;
+}
+/*PALABRAS DENTRO DE LAS LISTAS*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*HEADER*/ 
+
+.encabezado ul.navegador{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/*FOOTER*/
+
+.integrantes {
+    text-align: center;
+}
+.formato .footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bolder;
+}
