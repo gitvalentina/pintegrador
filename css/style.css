@@ -1,29 +1,70 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     background-color: black;
     font-family: IBM Plex Sans Arabic;
 }
-@media screen { body {
-    min-width: 340px; }
-    
-}
+
 /*PALABRAS DENTRO DE LAS LISTAS*/
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-/*HEADER*/ 
 
-.encabezado ul.navegador{
+/*HEADER*/
+.encabezado{
+    position: fixed;
+    z-index: 2000;
+    background-color: violet;
+    width: 100%;
+}
+.computer {
+    display: none;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buscador {
+    width: 95%;
+}
+
+.input {
+    width: 115px;
+}
+
+.menu {
+    border: none;
+}
+
+.encabezado ul.navegador {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 18px;
     font-weight: bolder;
+
+}
+.navegador a:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+
+/*MAIN*/
+main{
+    padding-top: 48.02px;
+}
+.titulos {
+    color: white;
+    text-align: center;
 }
 
 /*FOOTER*/
@@ -31,15 +72,33 @@ a{
 .integrantes {
     text-align: center;
     color: white;
+    margin-top: 5px;
+    padding-bottom: 15px;
 }
-.social-links{
+
+.social-links {
     color: grey;
 }
-.formato .footer ul{
+
+.formato .footer ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 18px;
     font-weight: bolder;
+}
+
+@media (min-width:720px) {
+    .computer {
+        display: block;
+        width: 100%;
+    }
+
+    .phone{
+        display: none;
+    }
+    .buscador{
+        width: 25%;
+    }
 }
