@@ -3,6 +3,11 @@
 }
 body {
     background-color: black;
+    font-family: IBM Plex Sans Arabic;
+}
+@media screen { body {
+    min-width: 340px; }
+    
 }
 /*PALABRAS DENTRO DE LAS LISTAS*/
 
