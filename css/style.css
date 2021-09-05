@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 body {
-    background-color: gray;
+    background-color: black;
 }
 /*PALABRAS DENTRO DE LAS LISTAS*/
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 /*HEADER*/ 
 
@@ -25,6 +25,10 @@ a{
 
 .integrantes {
     text-align: center;
+    color: white;
+}
+.social-links{
+    color: grey;
 }
 .formato .footer ul{
     list-style: none;
