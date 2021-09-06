@@ -56,29 +56,6 @@ a {
     color: gray;
     text-decoration: none;
 }
-
-
-/*MAIN*/
-main{
-    padding-top: 48.02px;
-}
-.titulos {
-    color: white;
-    text-align: center;
-}
-.items{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: wrap;
-    width: 100%;
-    list-style: none;
-}
-img{
-    display: inline;
-    width: 80%
-    
-}
-
 /*FOOTER*/
 
 .integrantes {
@@ -100,6 +77,48 @@ img{
     font-size: 18px;
     font-weight: bolder;
 }
+/*VALEN*/
+/*MAIN*/
+.mainhome{
+    padding-top: 48.02;
+}
+.tituloshome {
+    color: white;
+    text-align: center;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: wrap;
+    width: 100%;
+    list-style: none;
+}
+.imghome{
+    display: inline;
+    width: 80%
+    
+}
+/*NOUR*/
+.peliculasdiv{
+    padding-top: 50px;
+}
+.hpeliculas{
+    color: white;
+    text-align: center;
+}
+.imgpelicula{
+    width: 250px;
+    display:block;
+    margin: 0 auto;
+    
+}
+.detallediv{
+    display: flex;
+}
+.h1peliculas{
+    color: white;
+}
+
 
 @media (min-width:720px) {
     .computer {
