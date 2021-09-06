@@ -66,6 +66,18 @@ main{
     color: white;
     text-align: center;
 }
+.item-series{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: wrap;
+    width: 100%;
+    list-style: none;
+}
+img{
+    display: inline;
+    width: 80%
+    
+}
 
 /*FOOTER*/
 
@@ -103,4 +115,3 @@ main{
     }
 }
 
-/* Comentario */

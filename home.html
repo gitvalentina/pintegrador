@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>ST Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
                     <li>
                         <a href="fav.html">TUS FAVORITOS</a>
                     </li>
-                    <form class="buscador" action="resultados.html" method="GET">
+                    <form class="buscador" action="resultados.html" method="GET"><a href="resultados.html"><span uk-icon="icon: search"></span></a>
                         <input type="buscador" name="buscador" placeholder="BUSCAR" value="">
                     </form>
                 </ul>
@@ -52,14 +52,16 @@
             <div id="offcanvas-nav" uk-offcanvas="overlay: true">
                 <div class="uk-offcanvas-bar">
                     <ul class="uk-nav uk-nav-default">
-                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-active"><a href="#"><img src="" alt=""></a></li>
                         <li class="uk-parent">
                             <ul class="uk-nav-sub">
-                                <li><a href="#">Sub item</a></li>
-                                <li><a href="#">Sub item</a></li>
-                                <li><a href="#">Sub item</a></li>
-                                <li><a href="#">Sub item</a></li>
-                                <li><a href="#"><span uk-icon="icon: bookmark"></span>Mis Favoritos</a></li>
+                                <li><a href="home.html"><span uk-icon="icon: home"></span>Inicio</a></li>
+                                <li><a href="fav.html"><span uk-icon="icon: bookmark"></span>Mis Favoritos</a></li>
+                                <br>
+                                <li><a href="generos.html">Generos</a></li>
+                                <li><a href="detalle-series.html">Series</a></li>
+                                <li><a href="detalle-peliculas.html">Peliculas</a></li>
+                                
                             </ul>
                         </li>
                     </ul>
@@ -74,6 +76,17 @@
     <main>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/H32DI4WO0XM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         <h2 class="titulos">Series populares</h2> 
+            <div class="series">
+                <ul class="item-series">
+                    <li><a href="detalle-series.html"><img src="img-series/good doctor.jpg" alt="good doctor"></a></li>
+                    <li><a href="detalle-series.html"><img src="img-series/casa de papel.jpg" alt="casa de papel"></a></li>
+                    <li><a href="detalle-series.html"><img src="img-series/peaky blinders.jpg" alt="peaky blinders"></a></li>
+                    <li><a href="detalle-series.html"><img src="img-series/rick y morty.jpg" alt="ricky morty"></a></li>
+                    <li><a href="detalle-series.html"><img src="img-series/suits.jpg" alt="suits"></a></li>
+
+                </ul>
+            </div>
+            
         <h2 class="titulos">Peliculas populares</h2> 
         <h2 class="titulos">Lo mas visto en peliculas</h2> 
         
