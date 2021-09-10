@@ -110,10 +110,6 @@ nav.phone {
 
 /*VALEN*/
 /*MAIN*/
-.mainhome {
-    padding-top: 48.02;
-}
-
 .titulos {
     color: white;
     text-align: center;
@@ -160,7 +156,7 @@ li {
 .contenedor-favoritos {
     display: flex;
     flex-direction: row;
-    flex-direction: wrap;
+    flex-wrap: nowrap;
     list-style: none;
 }
 
