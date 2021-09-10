@@ -2,28 +2,40 @@
 * {
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
-li{
+
+li {
     list-style: none;
 }
-ul, ol{
-    margin: 0 ;
+
+ul,
+ol {
+    margin: 0;
     padding: 0%;
 }
+
+i {
+    color: white;
+}
+
 /*GENERALES*/
 body {
     background-color: black;
     font-family: IBM Plex Sans Arabic;
 }
-.contenedor-ppal{
+
+.contenedor-ppal {
     max-width: 1180px;
-    margin: 0 auto; /*centra al contnedor*/
+    margin: 0 auto;
+    /*centra al contnedor*/
 }
+
 /*logo*/
-header .logo{
+header .logo {
     border-radius: 50%;
     width: 10%;
     border: 3px solid black;
@@ -31,10 +43,11 @@ header .logo{
 
 
 /*HEADER*/
-.encabezado{
-   
+.encabezado {
+
     background-color: rgb(120, 41, 151);
 }
+
 .computer {
     display: none;
 }
@@ -44,15 +57,18 @@ header .logo{
     align-items: center;
     justify-content: space-between;
 }
+
 .phone-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-nav.phone{
+
+nav.phone {
     width: 100%;
 }
-.nav-phone{
+
+.nav-phone {
     padding: 0 10px;
 }
 
@@ -67,6 +83,7 @@ nav.phone{
 .menu {
     border: none;
 }
+
 /*FOOTER*/
 
 .integrantes {
@@ -88,46 +105,77 @@ nav.phone{
     font-size: 18px;
     font-weight: bolder;
 }
+
 /*VALEN*/
 /*MAIN*/
-.mainhome{
+.mainhome {
     padding-top: 48.02;
 }
-.tituloshome {
+
+.titulos {
     color: white;
     text-align: center;
 }
-.items{
+
+.contenedor-items {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-direction: wrap;
     width: 100%;
     list-style: none;
 }
-.imghome{
-    display: inline;
-    width: 80%
-    
+
+li {
+    padding: 0 1%;
 }
+
 /*NOUR*/
-.peliculasdiv{
+.peliculasdiv {
     padding-top: 50px;
 }
-.hpeliculas{
+
+.hpeliculas {
     color: white;
     text-align: center;
 }
-.imgpelicula{
+
+.imgpelicula {
     width: 250px;
-    display:block;
+    display: block;
     margin: 0 auto;
-    
+
 }
-.detallediv{
+
+.detallediv {
     display: flex;
 }
-.h1peliculas{
+
+.h1peliculas {
     color: white;
+}
+
+/*FAVORITOS*/
+.contenedor-favoritos {
+    display: flex;
+    flex-direction: row;
+    flex-direction: wrap;
+    width: 100%;
+    list-style: none;
+}
+
+.titulo-fav {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.items-fav {
+    padding: 0 5%;
+    width: 40%;
+}
+
+img.imghome {
+    width: 100%;
 }
 
 
@@ -136,17 +184,21 @@ nav.phone{
         display: block;
         width: 100%;
     }
-    .phone{
+
+    .phone {
         display: none;
     }
-    .buscador{
+
+    .buscador {
         width: 25%;
     }
+
     /*header*/
-    .navegador a:hover{
+    .navegador a:hover {
         color: black;
         text-decoration: none;
     }
+
     .navegador {
         display: flex;
         flex-direction: row;
@@ -154,25 +206,25 @@ nav.phone{
         font-size: 18px;
         font-weight: bolder;
         max-height: 80px;
-     
-    
     }
-    .comp-nav{
+
+    .comp-nav {
         padding: 0 10px;
         width: 10%;
         padding-top: 20px;
         max-height: 10%;
     }
-    
-    #logo{
+
+    #logo {
         width: 70%;
     }
-    .buscador{
+
+    .buscador {
         padding-top: 20px;
     }
-    #alinear-foto{
+
+    #alinear-foto {
         padding-top: 5px;
     }
 
 }
-

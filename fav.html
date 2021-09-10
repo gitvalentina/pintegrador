@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,14 @@
     <title>Favoritos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+
+   
 </head>
+
 <body>
     <header class="encabezado">
         <nav class="computer">
@@ -22,7 +23,7 @@
                 <ul class="navegador">
                     <li class="comp-nav" id="alinear-foto">
                         <a href="home.html">
-                            <img src="logo/logo.jpeg" alt="Logo StreamTime"  class="logo"  id="logo">
+                            <img src="logo/logo.jpeg" alt="Logo StreamTime" class="logo" id="logo">
                         </a>
                     </li>
                     <li class="comp-nav">
@@ -40,40 +41,50 @@
                     <li class="comp-nav">
                         <a href="fav.html">TUS FAVORITOS</a>
                     </li>
-                    <form class="buscador" action="resultados.html" method="GET"><a href="resultados.html"><span class="material-icons-outlined">
-                        search
-                        </span></a>
+                    <form class="buscador" action="resultados.html" method="GET"><i class="fas fa-search"></i>
                         <input type="buscador" name="buscador" placeholder="BUSCAR" value="">
                     </form>
                 </ul>
             </div>
         </nav>
-        <nav class="phone">          
-                <div>
-                     <ul class="phone-header">
-                            <li><a href="home.html" class="nav-phone">Inicio</a></li>
-                            <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
-                            <li><a href="generos.html" class="nav-phone">Generos</a></li>
-                            <li><a href="detalle-series.html" class="nav-phone">Series</a></li>
-                            <li><a href="detalle-peliculas.html" class="nav-phone">Peliculas</a></li>
-                    </ul>           
-                </div>
+        <nav class="phone">
+            <div>
+                <ul class="phone-header">
+                    <li><a href="home.html" class="nav-phone">Inicio</a></li>
+                    <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
+                    <li><a href="generos.html" class="nav-phone">Generos</a></li>
+                    <li><a href="detalle-series.html" class="nav-phone">Series</a></li>
+                    <li><a href="detalle-peliculas.html" class="nav-phone">Peliculas</a></li>
+                </ul>
+            </div>
             <form class="input" action="resultados.html" method="GET">
                 <input class="buscador" type="buscador" name="buscador" placeholder="BUSCAR" value="">
             </form>
         </nav>
     </header>
+    <main>
+        <h1 class="titulo-fav">MIS FAVORITOS</h1>
+        <ul class="contenedor-favoritos">
+            <li class="items-fav"><a href="detalle-series.html" class="ancho-imagenes"><img class="imghome"
+                        src="img-series/good doctor.jpg" alt="good doctor"></a></li>
+            <li class="items-fav"><a href="detalle-peliculas.html"><img class="imghome" src="img-peliculas/balvin.jpg"
+                        alt="balvin"></a></li>
+            <li class="items-fav"><a href="detalle-peliculas.html"><img class="imghome" src="img-mas-visto/queen.jpg"
+                        alt="queen"></a></li>
+        </ul>
+    </main>
     <footer class="formato">
-        <hr class="uk-divider-icon"> 
+        <hr class="uk-divider-icon">
         </hr>
-       
+
         <div class="social-links">
-             
-    
+
+
         </div>
         <h3 class="integrantes">
             Emilia Tarascio, Nour Awada y Valentina Douce
         </h3>
     </footer>
 </body>
+
 </html>
