@@ -20,54 +20,44 @@
         <nav class="computer">
             <div>
                 <ul class="navegador">
-                    <li class="logo">
-                        <a href="">
-                            <img src="" alt="Logo StreamTime">
+                    <li class="comp-nav" id="alinear-foto">
+                        <a href="home.html">
+                            <img src="logo/logo.jpeg" alt="Logo StreamTime"  class="logo"  id="logo">
                         </a>
                     </li>
-                    <li>
+                    <li class="comp-nav">
                         <a href="home.html">INICIO</a>
                     </li>
-                    <li>
+                    <li class="comp-nav">
                         <a href="generos.html">GENEROS</a>
                     </li>
-                    <li>
+                    <li class="comp-nav">
                         <a href="detalle-series.html">SERIES</a>
                     </li>
-                    <li>
+                    <li class="comp-nav">
                         <a href="detalle-peliculas.html">PELICULAS</a>
                     </li>
-                    <li>
+                    <li class="comp-nav">
                         <a href="fav.html">TUS FAVORITOS</a>
                     </li>
-                    <form class="buscador" action="resultados.html" method="GET"><a href="resultados.html"><span uk-icon="icon: search"></span></a>
+                    <form class="buscador" action="resultados.html" method="GET"><a href="resultados.html"><span class="material-icons-outlined">
+                        search
+                        </span></a>
                         <input type="buscador" name="buscador" placeholder="BUSCAR" value="">
                     </form>
                 </ul>
             </div>
         </nav>
-        <nav class="phone">
-            <button class="uk-button uk-button-default menu" type="button" uk-toggle="target: #offcanvas-nav"><span uk-icon="icon: menu"></span></button>
-
-            <div id="offcanvas-nav" uk-offcanvas="overlay: true">
-                <div class="uk-offcanvas-bar">
-                    <ul class="uk-nav uk-nav-default">
-                        <li class="uk-active"><a href="#"><img src="" alt=""></a></li>
-                        <li class="uk-parent">
-                            <ul class="uk-nav-sub">
-                                <li><a href="home.html"><span uk-icon="icon: home"></span>Inicio</a></li>
-                                <li><a href="fav.html"><span uk-icon="icon: bookmark"></span>Mis Favoritos</a></li>
-                                <br>
-                                <li><a href="generos.html">Generos</a></li>
-                                <li><a href="detalle-series.html">Series</a></li>
-                                <li><a href="detalle-peliculas.html">Peliculas</a></li>
-                                
-                            </ul>
-                        </li>
-                    </ul>
-            
+        <nav class="phone">          
+                <div>
+                     <ul class="phone-header">
+                            <li><a href="home.html" class="nav-phone">Inicio</a></li>
+                            <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
+                            <li><a href="generos.html" class="nav-phone">Generos</a></li>
+                            <li><a href="detalle-series.html" class="nav-phone">Series</a></li>
+                            <li><a href="detalle-peliculas.html" class="nav-phone">Peliculas</a></li>
+                    </ul>           
                 </div>
-            </div>
             <form class="input" action="resultados.html" method="GET">
                 <input class="buscador" type="buscador" name="buscador" placeholder="BUSCAR" value="">
             </form>
