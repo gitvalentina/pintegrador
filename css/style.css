@@ -1,25 +1,39 @@
+/*config ppal*/
 * {
     box-sizing: border-box;
 }
-
-body {
-    background-color: black;
-    font-family: IBM Plex Sans Arabic;
-}
-
-/*PALABRAS DENTRO DE LAS LISTAS*/
-
 a {
     text-decoration: none;
     color: white;
 }
+li{
+    list-style: none;
+}
+ul, ol{
+    margin: 0 ;
+    padding: 0%;
+}
+/*GENERALES*/
+body {
+    background-color: black;
+    font-family: IBM Plex Sans Arabic;
+}
+.contenedor-ppal{
+    max-width: 1180px;
+    margin: 0 auto; /*centra al contnedor*/
+}
+/*logo*/
+header .logo{
+    border-radius: 50%;
+    width: 10%;
+    border: 3px solid black;
+}
+
 
 /*HEADER*/
 .encabezado{
-    position: fixed;
-    z-index: 2000;
-    background-color: violet;
-    width: 100%;
+   
+    background-color: rgb(120, 41, 151);
 }
 .computer {
     display: none;
@@ -29,6 +43,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.phone-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav.phone{
+    width: 100%;
+}
+.nav-phone{
+    padding: 0 10px;
 }
 
 .buscador {
@@ -41,20 +66,6 @@ a {
 
 .menu {
     border: none;
-}
-
-.encabezado ul.navegador {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 18px;
-    font-weight: bolder;
-
-}
-.navegador a:hover{
-    color: gray;
-    text-decoration: none;
 }
 /*FOOTER*/
 
@@ -125,12 +136,43 @@ a {
         display: block;
         width: 100%;
     }
-
     .phone{
         display: none;
     }
     .buscador{
         width: 25%;
     }
+    /*header*/
+    .navegador a:hover{
+        color: black;
+        text-decoration: none;
+    }
+    .navegador {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bolder;
+        max-height: 80px;
+     
+    
+    }
+    .comp-nav{
+        padding: 0 10px;
+        width: 10%;
+        padding-top: 20px;
+        max-height: 10%;
+    }
+    
+    #logo{
+        width: 70%;
+    }
+    .buscador{
+        padding-top: 20px;
+    }
+    #alinear-foto{
+        padding-top: 5px;
+    }
+
 }
 
