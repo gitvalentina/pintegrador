@@ -22,6 +22,7 @@ i {
     color: white;
 }
 
+
 /*GENERALES*/
 body {
     background-color: black;
@@ -44,7 +45,6 @@ header .logo {
 
 /*HEADER*/
 .encabezado {
-
     background-color: rgb(120, 41, 151);
 }
 
@@ -55,13 +55,15 @@ header .logo {
 .phone {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .phone-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+.phone-header a:hover{
+    color:black ;
 }
 
 nav.phone {
@@ -159,7 +161,6 @@ li {
     display: flex;
     flex-direction: row;
     flex-direction: wrap;
-    width: 100%;
     list-style: none;
 }
 
@@ -169,9 +170,9 @@ li {
     padding: 10px 0;
 }
 
-.items-fav {
+li.items-fav {
     padding: 0 5%;
-    width: 40%;
+    
 }
 
 img.imghome {
@@ -179,8 +180,9 @@ img.imghome {
 }
 
 
+
 @media (min-width:720px) {
-    .computer {
+    nav.computer {
         display: block;
         width: 100%;
     }
@@ -189,14 +191,9 @@ img.imghome {
         display: none;
     }
 
-    .buscador {
-        width: 25%;
-    }
-
     /*header*/
     .navegador a:hover {
         color: black;
-        text-decoration: none;
     }
 
     .navegador {
@@ -221,6 +218,7 @@ img.imghome {
 
     .buscador {
         padding-top: 20px;
+        width: 25%;
     }
 
     #alinear-foto {
