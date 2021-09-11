@@ -128,17 +128,15 @@ li {
 }
 
 /*NOUR*/
-.peliculasdiv {
-    padding-top: 50px;
-}
 
-.hpeliculas {
+
+.h1detalles {
     color: white;
     text-align: center;
 }
 
-.imgpelicula {
-    width: 250px;
+.imgdetalles{
+    width: 300px;
     display: block;
     margin: 0 auto;
 
@@ -148,7 +146,7 @@ li {
     display: flex;
 }
 
-.h1peliculas {
+.hdetalles {
     color: white;
 }
 
