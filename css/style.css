@@ -168,6 +168,26 @@ li {
     color: white;
     margin-left: 40px;
 }
+.uldetallegenero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+.imgh{
+    width: 150px;
+    height: 100%;
+    padding-top: 5%;
+    
+}
+.h1dgenero{
+    color: white;
+    margin-left: 35px;
+}
+.h2dgenero{
+    color: white;
+    margin-left: 35px;
+    text-decoration: underline;
+}
 
 /*FAVORITOS*/
 .contenedor-favoritos {
@@ -241,6 +261,9 @@ img.imghome {
         width: 320px;
         height: 100px;
         font-size: 25px;
+    }
+    .imgh{
+        width: 280px;
     }
 
 }
