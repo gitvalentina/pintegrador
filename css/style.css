@@ -212,6 +212,29 @@ img.imghome {
     width: 100%;
 }
 
+/* EMILIA */
+/* resultados */
+
+#busqueda h1, #busqueda h2 {
+    color: white;
+    margin-left: 35px;
+}
+
+.resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resultados li {
+    width: 18%;
+    margin-bottom: 50px;
+}
+
+.resultados li img {
+    width: 100%
+}
+
 
 
 @media (min-width:720px) {
