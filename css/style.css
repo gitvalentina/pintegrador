@@ -215,9 +215,19 @@ img.imghome {
 /* EMILIA */
 /* resultados */
 
-#busqueda h1, #busqueda h2 {
+
+#busqueda h1 {
     color: white;
     margin-left: 35px;
+}
+
+#busqueda2 h1, #busqueda2 h2 {
+    color: white;
+    margin-left: 35px;
+}
+
+#busqueda2 {
+    display: none;
 }
 
 .resultados {
