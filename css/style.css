@@ -27,13 +27,12 @@ i {
 body {
     background-color: black;
     font-family: IBM Plex Sans Arabic;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
-.contenedor-ppal {
-    max-width: 1180px;
-    margin: 0 auto;
-    /*centra al contnedor*/
-}
 
 /*logo*/
 header .logo {
@@ -128,29 +127,29 @@ li {
 }
 
 /*NOUR*/
+/*DETALLES*/
 .h1detalles {
     color: white;
     text-align: center;
 }
-
-.imgdetalles{
-    width: 300px;
-    display: block;
-    margin: 0 auto;
-
-}
-
-.detallediv {
-    display: flex;
-}
-
 .hdetalles {
     color: white;
 }
+.div2{
+    width: 50%;
+    margin:0 auto;
+    margin-bottom: 20px;
+    
+}
+.imgclase{
+    display: block;
+    width: 100%; 
+}
+/*GENEROS*/
 .noursection{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .generosclase{
     background-color: rgb(113, 36, 127);
@@ -164,6 +163,7 @@ li {
 .noursection a:hover{
     color: rgba(255, 255, 255, 0.5);
 }
+/*DETALLE DE GENEROS*/
 .h1generos{
     color: white;
     margin-left: 40px;
@@ -172,12 +172,10 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;  
+    align-items: center;
 }
 .imgh{
-    width: 150px;
-    height: 100%;
-    padding-top: 5%;
-    
+    width: 100%; 
 }
 .h1dgenero{
     color: white;
@@ -188,7 +186,9 @@ li {
     margin-left: 35px;
     text-decoration: underline;
 }
-
+.h3clase{
+    color: white;
+}
 /*FAVORITOS*/
 .contenedor-favoritos {
     display: flex;
@@ -290,13 +290,15 @@ img.imghome {
     #alinear-foto {
         padding-top: 5px;
     }
+    .div2{
+        width: 20%;
+    }
     .generosclase{
         width: 320px;
         height: 100px;
         font-size: 25px;
+        
     }
-    .imgh{
-        width: 280px;
-    }
+
 
 }
