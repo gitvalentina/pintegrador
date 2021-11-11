@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,13 @@
     <title>ST Generos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body class="contenedor-ppal">
     <header class="encabezado">
         <nav class="computer">
@@ -19,7 +22,7 @@
                 <ul class="navegador">
                     <li class="comp-nav" id="alinear-foto">
                         <a href="home.html">
-                            <img src="logo/logo.jpeg" alt="Logo StreamTime"  class="logo"  id="logo">
+                            <img src="logo/logo.jpeg" alt="Logo StreamTime" class="logo" id="logo">
                         </a>
                     </li>
                     <li class="comp-nav">
@@ -43,25 +46,25 @@
                 </ul>
             </div>
         </nav>
-        <nav class="phone">          
-                <div>
-                     <ul class="phone-header">
-                            <li><a href="home.html" class="nav-phone">Inicio</a></li>
-                            <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
-                            <li><a href="generos.html" class="nav-phone">Generos</a></li>
-                            <li><a href="detalle-series.html" class="nav-phone">Series</a></li>
-                            <li><a href="detalle-peliculas.html" class="nav-phone">Peliculas</a></li>
-                    </ul>           
-                </div>
+        <nav class="phone">
+            <div>
+                <ul class="phone-header">
+                    <li><a href="home.html" class="nav-phone">Inicio</a></li>
+                    <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
+                    <li><a href="generos.html" class="nav-phone">Generos</a></li>
+                    <li><a href="detalle-series.html" class="nav-phone">Series</a></li>
+                    <li><a href="detalle-peliculas.html" class="nav-phone">Peliculas</a></li>
+                </ul>
+            </div>
             <form class="input" action="resultados.html" method="GET">
                 <input class="buscador" type="buscador" name="buscador" placeholder="BUSCAR" value="">
             </form>
         </nav>
     </header>
     <main>
-     <h1 class="h1generos">GENEROS</h1>
-        <section class="noursection">
-            <article class="generosclase"><a href="./detalle-genero.html">ACCION</a></article>
+        <h1 class="h1generos">GENEROS DE PELICULAS</h1>
+        <section id="listadoPeliculas" class="noursection">
+            <!-- <article class="generosclase"><a href="./detalle-genero.html">ACCION</a></article>
             <article class="generosclase"><a href="./detalle-genero.html">ANIMES</a></article>
             <article class="generosclase"><a href="./detalle-genero.html">CIENCIA FICCION</a></article>
             <article class="generosclase"><a href="./detalle-genero.html">COMEDIAS</a></article>
@@ -84,20 +87,51 @@
             <article class="generosclase"><a href="./detalle-genero.html">TELENOVELAS</a></article>
             <article class="generosclase"><a href="./detalle-genero.html">TERROR</a></article>
             <article class="generosclase"><a href="./detalle-genero.html">THRILLERS</a></article>
-            <article class="generosclase"><a href="./detalle-genero.html">DESCRIPCION DE AUDIO</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">DESCRIPCION DE AUDIO</a></article> -->
+        </section>
+
+        <h1 class="h1generos">GENEROS DE SERIES</h1>
+        <section id="listadoSeries" class="noursection">
+            <!-- <article class="generosclase"><a href="./detalle-genero.html">ACCION</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">ANIMES</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">CIENCIA FICCION</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">COMEDIAS</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">CRIMEN</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">DE ARGENTINA</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">DE HOLLYWOOD</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">DE LATINOAMERICA</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">DOCUMENTALES</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">DRAMAS</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">FANTASIA</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">INFANTILES Y FAMILIARES</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">INTERNACIONALES</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">MISTERIO</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">MUSICA Y MUSICALES</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">REALITY TV</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">ROMANCES</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">STAND UP</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">SUSPENSO</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">TAQUILLERAS</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">TELENOVELAS</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">TERROR</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">THRILLERS</a></article>
+            <article class="generosclase"><a href="./detalle-genero.html">DESCRIPCION DE AUDIO</a></article> -->
         </section>
     </main>
     <footer class="formato">
-        <hr class="uk-divider-icon"> 
+        <hr class="uk-divider-icon">
         </hr>
-       
+
         <div class="social-links">
-             
-    
+
+
         </div>
         <h3 class="integrantes">
             Emilia Tarascio, Nour Awada y Valentina Douce
         </h3>
     </footer>
+
+    <script src="js/generos.js"></script>
 </body>
+
 </html>
