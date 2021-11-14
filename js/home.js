@@ -16,7 +16,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=184353d8f8f15b5e8908b2
             src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="big hero">
             </a>
             <p>${datos.results[i].title}</p>
-            <p>${datos.results[i].popularity} </p>
+            <p>${datos.results[i].release_date} </p>
          </article> 
          `;
         }
@@ -42,7 +42,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=184353d8f8f15b5e8908
                src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="big hero">
             </a>
             <p>${datos.results[i].title}</p>
-            <p>${datos.results[i].vote_average} </p>
+            <p>Puntaje: ${datos.results[i].vote_average} </p>
          </article> 
          `;
         }
@@ -68,7 +68,7 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=184353d8f8f15b5e8908b2560
             src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="big hero">
             </a>
             <p>${datos.results[i].name}</p>
-            <p>${datos.results[i].popularity} </p>
+            <p>${datos.results[i].first_air_date} </p>
          </article> 
          `;
         }
