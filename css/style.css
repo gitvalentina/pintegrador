@@ -196,7 +196,8 @@ li {
 .h2dgenero{
     color: white;
     margin-left: 35px;
-    text-decoration: underline;
+    text-decoration: none;
+    text-align: center;
 }
 .h3clase{
     color: white;
