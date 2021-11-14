@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,13 @@
     <title>ST Detalle de Peliculas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
+
 <body class="contenedor-ppal">
     <header class="encabezado">
         <nav class="computer">
@@ -19,7 +22,7 @@
                 <ul class="navegador">
                     <li class="comp-nav" id="alinear-foto">
                         <a href="home.html">
-                            <img src="logo/logo.jpeg" alt="Logo StreamTime"  class="logo"  id="logo">
+                            <img src="logo/logo.jpeg" alt="Logo StreamTime" class="logo" id="logo">
                         </a>
                     </li>
                     <li class="comp-nav">
@@ -43,58 +46,95 @@
                 </ul>
             </div>
         </nav>
-        <nav class="phone">          
-                <div>
-                     <ul class="phone-header">
-                            <li><a href="home.html" class="nav-phone">Inicio</a></li>
-                            <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
-                            <li><a href="generos.html" class="nav-phone">Generos</a></li>
-                            <li><a href="detalle-series.html" class="nav-phone">Series</a></li>
-                            <li><a href="detalle-peliculas.html" class="nav-phone">Peliculas</a></li>
-                    </ul>           
-                </div>
+        <nav class="phone">
+            <div>
+                <ul class="phone-header">
+                    <li><a href="home.html" class="nav-phone">Inicio</a></li>
+                    <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
+                    <li><a href="generos.html" class="nav-phone">Generos</a></li>
+                    <li><a href="detalle-series.html" class="nav-phone">Series</a></li>
+                    <li><a href="detalle-peliculas.html" class="nav-phone">Peliculas</a></li>
+                </ul>
+            </div>
             <form class="input" action="resultados.html" method="GET">
                 <input class="buscador" type="buscador" name="buscador" placeholder="BUSCAR" value="">
             </form>
         </nav>
     </header>
-    <h1 class="h1dgenero">ACCION</h1>
-    <div>
-        <h2 class="h2dgenero">SERIES</h2>
+    <h2 class="h1dgenero">SERIES</h2>
+    <div class="centrarGeneros">
         <ul class="uldetallegenero">
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/skyrojo.jpg" alt=""></a><h3 class="h3clase">Sky Rojo</h3></li>
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/outerbanks.jpg" alt=""></a><h3 class="h3clase">Outer Banks</h3></li>
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/loki.jpg" alt=""></a><h3 class="h3clase">Loki</h3></li>
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/turner and hotch.jpg" alt=""></a><h3 class="h3clase">Turner and Hotch</h3></li>
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/game of thrones.jpg" alt=""></a><h3 class="h3clase">GOT</h3></li>
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/what if.jpg" alt=""></a><h3 class="h3clase">What if?</h3></li>
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/zero.jpg" alt=""></a><h3 class="h3clase">Zero</h3></li>
-            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/dealer.jpg" alt=""></a><h3 class="h3clase">Dealer</h3></li>
+            <!-- <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/skyrojo.jpg" alt=""></a>
+                <h3 class="h3clase">Sky Rojo</h3>
+            </li>
+            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/outerbanks.jpg" alt=""></a>
+                <h3 class="h3clase">Outer Banks</h3>
+            </li>
+            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/loki.jpg" alt=""></a>
+                <h3 class="h3clase">Loki</h3>
+            </li>
+            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/turner and hotch.jpg" alt=""></a>
+                <h3 class="h3clase">Turner and Hotch</h3>
+            </li>
+            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/game of thrones.jpg" alt=""></a>
+                <h3 class="h3clase">GOT</h3>
+            </li>
+            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/what if.jpg" alt=""></a>
+                <h3 class="h3clase">What if?</h3>
+            </li>
+            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/zero.jpg" alt=""></a>
+                <h3 class="h3clase">Zero</h3>
+            </li>
+            <li><a href="./detalle-series.html"><img class="imgh" src="./img-series/dealer.jpg" alt=""></a>
+                <h3 class="h3clase">Dealer</h3>
+            </li> -->
         </ul>
     </div>
-    <div>
-        <h2 class="h2dgenero">PELICULAS</h2>
+    <!-- <div>
+        <h1 class="h1dgenero">ACCION</h1>
         <ul class="uldetallegenero">
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/alleway.jpg" alt=""></a><h3 class="h3clase">Alleway</h3></li>
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/megalodon.jpg" alt=""></a><h3 class="h3clase">Megalodon</h3></li>
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/the gateway.jpg" alt=""></a><h3 class="h3clase">The Gateway</h3></li>
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/testigos silenciosos.jpg" alt=""></a><h3 class="h3clase">Testigos Silenciosos</h3></li>
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/kate.jpg" alt=""></a><h3 class="h3clase">Kate</h3></li>
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/final kill.jpg" alt=""></a><h3 class="h3clase">Final Kill</h3></li>
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/lo inimaginable.jpg" alt=""></a><h3 class="h3clase">Lo Inimaginable</h3></li>
-            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/sweet girl.jpg" alt=""></a><h3 class="h3clase">Sweet Girl</h3></li>
+             <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/alleway.jpg" alt=""></a>
+                <h3 class="h3clase">Alleway</h3>
+            </li>
+            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/megalodon.jpg" alt=""></a>
+                <h3 class="h3clase">Megalodon</h3>
+            </li>
+            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/the gateway.jpg" alt=""></a>
+                <h3 class="h3clase">The Gateway</h3>
+            </li>
+            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/testigos silenciosos.jpg"
+                        alt=""></a>
+                <h3 class="h3clase">Testigos Silenciosos</h3>
+            </li>
+            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/kate.jpg" alt=""></a>
+                <h3 class="h3clase">Kate</h3>
+            </li>
+            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/final kill.jpg" alt=""></a>
+                <h3 class="h3clase">Final Kill</h3>
+            </li>
+            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/lo inimaginable.jpg"
+                        alt=""></a>
+                <h3 class="h3clase">Lo Inimaginable</h3>
+            </li>
+            <li><a href="./detalle-peliculas.html"><img class="imgh" src="./img-peliculas/sweet girl.jpg" alt=""></a>
+                <h3 class="h3clase">Sweet Girl</h3>
+            </li> 
         </ul>
-    </div>
+    </div> -->
     <footer class="formato">
-        <hr class="uk-divider-icon"> 
+        <hr class="uk-divider-icon">
         </hr>
-        <article class= "tmdb">
-            <img  src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="TMDBLogo">                  
-        </article>
+
+        <div class="social-links">
+
+
         </div>
         <h3 class="integrantes">
             Emilia Tarascio, Nour Awada y Valentina Douce
         </h3>
     </footer>
+
+    <script src="js/detalle-genero.js"></script>
 </body>
+
 </html>
