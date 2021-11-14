@@ -21,6 +21,11 @@ ol {
 i {
     color: white;
 }
+p {
+    color: white;
+    text-align: center;
+   
+}
 
 
 /*GENERALES*/
@@ -106,20 +111,27 @@ nav.phone {
     font-size: 18px;
     font-weight: bolder;
 }
+.tmdb{
+    margin: 0% 35%;
+    width: 30%;
+}
 
-/*VALEN*/
+/*VALEN*/ 
 /*MAIN*/
 .titulos {
     color: white;
     text-align: center;
 }
 
-.contenedor-items {
+.pelis-populares, .series-populares, .mas-visto {
     display: flex;
     flex-direction: row;
     flex-direction: wrap;
     width: 100%;
     list-style: none;
+}
+article{
+    padding: 0% 1%;
 }
 
 li {
