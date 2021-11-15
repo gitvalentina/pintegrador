@@ -46,7 +46,7 @@
             let menorSeis = 6
 
             if (arraySeries.length == 0) {
-                document.querySelector('section').innerHTML = "<h2 class='resultado-error'> No hay peliculas para tu busqueda </h2>"
+                document.querySelector('.series-populares').innerHTML = "<h2 class='resultado-error'> No hay series para tu busqueda </h2>"
             }
             if (arraySeries.length <6) {
                 menorSeis = arraySeries.length

@@ -146,6 +146,9 @@ li {
     text-align: center;
     text-decoration: solid;
 }
+section.pelis-populares, .series-populares {
+    justify-content: center;
+}
 
 /*NOUR*/
 /*DETALLES*/
@@ -232,8 +235,7 @@ li.items-fav {
 
 img.imghome {
     width: 100%;
-    max-width: 100px;
-    max-height: 200px;
+  
 }
 
 /* EMILIA */
@@ -268,6 +270,8 @@ img.imghome {
 .resultados li img {
     width: 100%
 }
+
+
 
 
 
