@@ -24,7 +24,10 @@ i {
 p {
     color: white;
     text-align: center;
-   
+}
+section{
+    color: white;
+    height: 100%;
 }
 
 
@@ -123,7 +126,7 @@ nav.phone {
     text-align: center;
 }
 
-.pelis-populares, .series-populares, .mas-visto {
+.pelis-populares, .series-populares, .mas-visto{
     display: flex;
     flex-direction: row;
     flex-direction: wrap;
@@ -136,6 +139,12 @@ article{
 
 li {
     padding: 0 1%;
+}
+/*Buscador*/
+.resultado-error{
+    color: white;
+    text-align: center;
+    text-decoration: solid;
 }
 
 /*NOUR*/
@@ -223,6 +232,8 @@ li.items-fav {
 
 img.imghome {
     width: 100%;
+    max-width: 100px;
+    max-height: 200px;
 }
 
 /* EMILIA */

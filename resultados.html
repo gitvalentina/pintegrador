@@ -39,7 +39,7 @@
                         <a href="fav.html">TUS FAVORITOS</a>
                     </li>
                     <form class="buscador" action="resultados.html" method="GET"><i class="fas fa-search"></i>
-                        <input type="text" name="buscador" placeholder="BUSCAR">
+                        <input class="campo-buscar" type="buscador" name="buscador" placeholder="BUSCAR" value="">
                     </form>
                 </ul>
             </div>
@@ -60,83 +60,28 @@
         </nav>
     </header> 
 
-    <main id="busqueda">
-        <h1></h1>
-
-         <ul class="resultados">
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/La casa de papel.jpg"alt="La casa de papel">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/elite.jpg"alt="Elite">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/vis a vis .jpg"alt="vis a vis">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/Lucifer.webp"alt="Lucifer">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/pablo escobar.jpg"alt="Pablo escobar: el patron del mal">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/el marginal.jpg"alt="el marginal">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/el reino.jpg"alt="el reino">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/grey's anatomy.webp"alt="grey's anatomy">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/el barco .jpg"alt="el barco">
-                </a>
-            </li>
-
-            <li>
-                <a href="./detalle-series.html">
-                    <img src="./img-resultados/la piloto.webp"alt="la piloto">
-                </a>
-            </li>
-
-        </ul>
-       
+    <main class="mainhome">
+        
+        <h2 class="titulos peli">Peliculas para: </h2>
+        <section class="pelis-populares">
+            <!-- <article>
+                    <a href="detalle-series.html" class="items-main"><img class="imghome"
+                        src="img-peliculas/big hero.jpg" alt="foto"></a>
+                    <p></p>
+                    <p></p>
+            </article> -->
+        </section>
+        <h2 class="titulos serie">Series para: </h2>
+        <section class="series-populares">
+            <!-- <article>
+                    <a href="detalle-peliculas.html" class="items-main"><img class="imghome"
+                        src="img-peliculas/big hero.jpg" alt="foto"></a>
+                    <p></p>
+                    <p></p>
+            </article> -->
+         
+        </section>
     </main>
-
-
-    <div id="busqueda2">
-        <h1>Terminos relacionados con ...</h1>
-        <h2>No se encontraron resultados</h2>
-    </div>
-
-    
-   
-
 
     <footer class="formato">
         <hr class="uk-divider-icon"> 
@@ -149,5 +94,7 @@
             Emilia Tarascio, Nour Awada y Valentina Douce
         </h3>
     </footer>
+    <script src="js/resultados.js"></script>
+    <script src="js/buscador-general.js"></script>
 </body>
 </html>
