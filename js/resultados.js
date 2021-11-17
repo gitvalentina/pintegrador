@@ -67,3 +67,32 @@
         .catch(function (error) {
             console.log('El error fue: ' + error);
         })
+
+        let spinner = document.querySelector(".loader")
+        spinner.style.display = "none";
+        setTimeout(function () {}, 3000);
+        let esconder = document.querySelector(".series-populares .pelis-populares")
+        esconder.style.display = "none";
+        ///////////SPINNER////////// 
+        
+        if (mediaType == "movie") {
+        
+            fetch(``)
+                .then(function (response) {
+                    return response.json()
+                })
+                .then(function (data) {
+                    console.log(data)
+        
+                    spinner.style.display = "none";
+                    esconder.style.display = "none";
+                  
+                })
+        
+        
+                .catch(function (error) {
+                    console.log('El error fue: ' + error);
+        
+                })
+        
+        }
