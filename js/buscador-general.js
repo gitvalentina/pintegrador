@@ -19,3 +19,5 @@ formulario.addEventListener('submit', function (event) {
 campoBuscador.addEventListener('focus', function(){
     campoBuscador.style.border = '3px solid blue';
 })
+
+//input

@@ -5,6 +5,8 @@
     document.querySelector('.peli').innerHTML += `${captar}`
     document.querySelector('.serie').innerHTML += `${captar}`
 
+
+
     fetch('https://api.themoviedb.org/3/search/movie?api_key=184353d8f8f15b5e8908b2560e49a9f3&query=' + captar + '&page=1&include_adult=false')
         .then(function (response) {
             return response.json()
@@ -19,16 +21,22 @@
                 document.querySelector('section').innerHTML = "<h2 class='resultado-error'> No hay peliculas para tu busqueda </h2>"
             }
 
+
             for (let i = 0; i < 6; i++) {
-                document.querySelector(".pelis-populares").innerHTML += `
-                <article>
-                <a href="detalle-series.html?id=${datos.results[i].id}" class="items-main"><img class="imghome"
-                    src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="big hero"></a>
-                    <p>${datos.results[i].title}</p>
-                    <p>Puntaje: ${datos.results[i].vote_average} </p>
-                </article>        
-          `
+                if (arrayPeliculas[i].poster_path == null) {
+
+                } else {
+                    document.querySelector(".pelis-populares").innerHTML += `
+                    <article>
+                    <a href="detalle-series.html?id=${datos.results[i].id}" class="items-main"><img class="imghome"
+                        src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt=""></a>
+                        <p>${datos.results[i].title}</p>
+                        <p>Puntaje: ${datos.results[i].vote_average} </p>
+                    </article>        
+              `
+                }
             }
+
         })
 
         .catch(function (error) {
@@ -48,51 +56,55 @@
             if (arraySeries.length == 0) {
                 document.querySelector('.series-populares').innerHTML = "<h2 class='resultado-error'> No hay series para tu busqueda </h2>"
             }
-            if (arraySeries.length <6) {
+            if (arraySeries.length < 6) {
                 menorSeis = arraySeries.length
-            }  
+            }
 
             for (let i = 0; i < menorSeis; i++) {
-                document.querySelector('.series-populares').innerHTML += `
-                <article>
-                <a href="detalle-series.html?id=${datos.results[i].id}" class="items-main"><img class="imghome"
-                    src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="big hero"></a>
-                    <p>${datos.results[i].name}</p>
-                    <p>Puntaje: ${datos.results[i].vote_average} </p>
-                </article>        
-            `;
+                if (arraySeries[i].poster_path == null) {
+
+                } else {
+                    document.querySelector('.series-populares').innerHTML += `
+                    <article>
+                    <a href="detalle-series.html?id=${datos.results[i].id}" class="items-main"><img class="imghome"
+                        src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt=""></a>
+                        <p>${datos.results[i].name}</p>
+                        <p>Puntaje: ${datos.results[i].vote_average} </p>
+                    </article>        
+                `;
+                }
             }
         })
 
         .catch(function (error) {
             console.log('El error fue: ' + error);
         })
+       
+       
+        //validacion spinner//
+    let spinner = document.querySelector(".loader")
+    spinner.style.display = "none";
+    setTimeout(function () {}, 3000);
+    let esconder = document.querySelector(".series-populares, .pelis-populares")
+    esconder.style.display = "none";
+    ///////////SPINNER////////// 
 
-        let spinner = document.querySelector(".loader")
-        spinner.style.display = "none";
-        setTimeout(function () {}, 3000);
-        let esconder = document.querySelector(".series-populares .pelis-populares")
-        esconder.style.display = "none";
-        ///////////SPINNER////////// 
-        
-        if (mediaType == "movie") {
-        
-            fetch(``)
-                .then(function (response) {
-                    return response.json()
-                })
-                .then(function (data) {
-                    console.log(data)
-        
-                    spinner.style.display = "none";
-                    esconder.style.display = "none";
-                  
-                })
-        
-        
-                .catch(function (error) {
-                    console.log('El error fue: ' + error);
-        
-                })
-        
-        }
+    if (mediaType == "movie") {
+
+        fetch(``)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (data) {
+                console.log(data)
+
+                spinner.style.display = "none";
+                esconder.style.display = "none";
+
+            })
+
+            .catch(function (error) {
+                console.log('El error fue: ' + error);
+
+            })
+    }
