@@ -5,6 +5,7 @@
     document.querySelector('.peli').innerHTML += `${captar}`
     document.querySelector('.serie').innerHTML += `${captar}`
 
+    let spinner = document.querySelector(".loader");
 
 
     fetch('https://api.themoviedb.org/3/search/movie?api_key=184353d8f8f15b5e8908b2560e49a9f3&query=' + captar + '&page=1&include_adult=false')
@@ -14,8 +15,9 @@
 
         .then(function (datos) {
             console.log(datos.results);
+            spinner.style.display = "none";
             //guardo el array de peliculas
-            let arrayPeliculas = datos.results
+            let arrayPeliculas = datos.results;
 
             if (arrayPeliculas.length == 0) {
                 document.querySelector('section').innerHTML = "<h2 class='resultado-error'> No hay peliculas para tu busqueda </h2>"
@@ -41,6 +43,7 @@
 
         .catch(function (error) {
             console.log('El error fue:' + error);
+            spinner.innerHTML = 'Error en el sistema';
         })
 
     fetch(`https://api.themoviedb.org/3/search/tv?api_key=184353d8f8f15b5e8908b2560e49a9f3&query=${captar}&page=1&include_adult=false`)
@@ -50,14 +53,15 @@
 
         .then(function (datos) {
             console.log(datos.results);
-            let arraySeries = datos.results
-            let menorSeis = 6
+            spinner.style.display = "none";
+            let arraySeries = datos.results;
+            let menorSeis = 6;
 
             if (arraySeries.length == 0) {
-                document.querySelector('.series-populares').innerHTML = "<h2 class='resultado-error'> No hay series para tu busqueda </h2>"
+                document.querySelector('.series-populares').innerHTML = "<h2 class='resultado-error'> No hay series para tu busqueda </h2>";
             }
             if (arraySeries.length < 6) {
-                menorSeis = arraySeries.length
+                menorSeis = arraySeries.length;
             }
 
             for (let i = 0; i < menorSeis; i++) {
@@ -78,33 +82,8 @@
 
         .catch(function (error) {
             console.log('El error fue: ' + error);
+            spinner.innerHTML = 'Error en la busqueda';
         })
-       
-       
-        //validacion spinner//
-    let spinner = document.querySelector(".loader")
-    spinner.style.display = "none";
-    setTimeout(function () {}, 3000);
-    let esconder = document.querySelector(".series-populares, .pelis-populares")
-    esconder.style.display = "none";
-    ///////////SPINNER////////// 
+    
 
-    if (mediaType == "movie") {
-
-        fetch(``)
-            .then(function (response) {
-                return response.json()
-            })
-            .then(function (data) {
-                console.log(data)
-
-                spinner.style.display = "none";
-                esconder.style.display = "none";
-
-            })
-
-            .catch(function (error) {
-                console.log('El error fue: ' + error);
-
-            })
-    }
+  

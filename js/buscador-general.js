@@ -20,4 +20,4 @@ campoBuscador.addEventListener('focus', function(){
     campoBuscador.style.border = '3px solid blue';
 })
 
-//input
+
