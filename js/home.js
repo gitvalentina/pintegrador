@@ -64,7 +64,7 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=184353d8f8f15b5e8908b2560
      for (let i = 0; i < 6; i++) {
          document.querySelector('.series-populares').innerHTML += `
          <article>
-            <a href="detalle-peliculas.html?id=${datos.results[i].id}" class="items-main"><img class="imghome"
+            <a href="detalle-series.html?id=${datos.results[i].id}" class="items-main"><img class="imghome"
             src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="big hero">
             </a>
             <p>${datos.results[i].name}</p>
