@@ -138,6 +138,7 @@ nav.phone {
 }
 article{
     padding: 0% 1%;
+    width: 15%;
 }
 
 li {
@@ -149,7 +150,7 @@ li {
     text-align: center;
     text-decoration: solid;
 }
-section.pelis-populares, .series-populares {
+section.pelis-populares, .series-populares, .mas-visto {
     justify-content: center;
 }
 
