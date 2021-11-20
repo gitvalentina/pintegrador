@@ -23,7 +23,7 @@ window.addEventListener("load" , function(){
     
     
         movies.innerHTML +=`
-        <article>
+        <section>
         <h1 class= h1detalles>${tituloMovie}</h1>
         <div class="div2"><img class="imgclase" src="https://image.tmdb.org/t/p/w342${imagenMovie}"></div>
         <ul class="hdetalles">
@@ -34,7 +34,7 @@ window.addEventListener("load" , function(){
         <a href="./generos.html?id=${idMovie}"><li>Generos: ${genreMovie}</li></a>
         <a href="./fav.html?id=${idMovie}"><li>Agregar a Favoritos</li></a>
         </ul>
-        </article>`
+        </section>`
 
     })
     .catch(function (error) {
