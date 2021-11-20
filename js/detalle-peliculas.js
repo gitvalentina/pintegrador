@@ -40,7 +40,7 @@ window.addEventListener("load" , function(){
             //Recuperso datos del storage
 //set item agrega una propiedad y sus valores a obj literal
 //para ver si habia algo
-let recuperoStorage= localStorage.getItem('fav');
+let recuperoStorage= localStorage.getItem('favoritosPeliculas');
 console.log(recuperoStorage)
 //en el caso de que haya elementos en storage. Osea no sea nulo,
 if (recuperoStorage != null){
@@ -79,7 +79,7 @@ agregarAFav.addEventListener('click', function(){
     //guardo el array actualizado como string
     let trackAStorage= JSON.stringify(listaFavoritos);
     //Guardo el string en local storage
-    localStorage.setItem('fav', trackAStorage)
+    localStorage.setItem('favoritosPeliculas', trackAStorage)
     //chequeo*/
     console.log(localStorage)
 })
