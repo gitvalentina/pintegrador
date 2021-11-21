@@ -26,29 +26,32 @@ fetch(url)
     .then(function( resp ){
         
         let listado = document.querySelector('.uldetallegenero');
-
+            
         for(let i = 0; i < resp.results.length; i++) {
 
-            let id = resp.results[i].id;
-            let foto = 'https://image.tmdb.org/t/p/w342' + resp.results[i].backdrop_path;
-            let nombre;
+            if(resp.results[i].backdrop_path != null) {
 
-            //pregunto si es serie o pelicula entonces saco el nombre del objeto
-            if(tipo == 'series') {
-                nombre = resp.results[i].name;
+                let id = resp.results[i].id;
+                let foto = 'https://image.tmdb.org/t/p/w342' + resp.results[i].backdrop_path;
+                let nombre;
+
+                //pregunto si es serie o pelicula entonces saco el nombre del objeto
+                if(tipo == 'series') {
+                    nombre = resp.results[i].name;
+                }
+                
+                if(tipo == 'peliculas') {
+                    nombre = resp.results[i].title;
+                }
+                
+                listado.innerHTML += `
+                    <li>
+                        <a href="./detalle-${ tipo }.html?id=${ id }">
+                            <img class="imgh" src="${ foto }" alt="">
+                        </a>
+                        <h3 class="h3clase">${ nombre }</h3>
+                    </li>`;
             }
-            
-            if(tipo == 'peliculas') {
-                nombre = resp.results[i].title;
-            }
-            
-            listado.innerHTML += `
-                <li>
-                    <a href="./detalle-${ tipo }.html?id=${ id }">
-                        <img class="imgh" src="${ foto }" alt="">
-                    </a>
-                    <h3 class="h3clase">${ nombre }</h3>
-                </li>`;
         }
 
     });
