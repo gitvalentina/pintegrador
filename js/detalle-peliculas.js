@@ -13,74 +13,58 @@ window.addEventListener("load" , function(){
     .then(function(datos){
         console.log(datos);
 
-        let imagenMovie = datos.poster_path
-        let tituloMovie = datos.original_title
-        let ratingMovie = datos.vote_average
-        let releaseMovie = datos.release_date
-        let runtimeMovie = datos.runtime
-        let overviewMovie = datos.overview
-        let genreMovie = datos.genres.length
-        let idMovie = datos.id
+
+
+        let genres =""
+        for (let i =0; i < datos.genres.length; i++ ){
+            genres += `<a href="detail-genres.html?idGenero=${datos.genres[i].id}">${datos.genres[i].name} </a>`
+        }
     
     
         movies.innerHTML +=`
         <section>
-        <h1 class= h1detalles>${tituloMovie}</h1>
-        <div class="div2"><img class="imgclase" src="https://image.tmdb.org/t/p/w342${imagenMovie}"></div>
+        <h1 class= h1detalles>${datos.original_title}</h1>
+        <div class="div2"><img class="imgclase" src="https://image.tmdb.org/t/p/w342${datos.poster_path}"></div>
         <ul class="hdetalles">
-        <li>Sinopsis: ${overviewMovie}</li>
-        <li>Fecha de Estreno: ${releaseMovie}</li>
-        <li>Duracion: ${runtimeMovie}</li>
-        <li>Rating: ${ratingMovie}</li>
-        <a href="./generos.html?id=${idMovie}"><li>Generos: ${genreMovie}</li></a>
+        <li>Sinopsis: ${datos.overview}</li>
+        <li>Fecha de Estreno: ${datos.release_date}</li>
+        <li>Duracion: ${datos.runtime}</li>
+        <li>Rating: ${datos.vote_average}</li>
+        <a href="./generos.html?id=${datos.id}"><li>Generos: ${genres}</li></a>
         <button class= "fav"> Agregar a Favoritos</button>
         </ul>
         </section>`
 
-            //Recuperso datos del storage
-//set item agrega una propiedad y sus valores a obj literal
-//para ver si habia algo
 let recuperoStorage= localStorage.getItem('favoritosPeliculas');
 console.log(recuperoStorage)
-//en el caso de que haya elementos en storage. Osea no sea nulo,
+
 if (recuperoStorage != null){
-    //transformo el string en array
-    //parse transforma a json en obj literal
-    listaFavoritos=JSON.parse(recuperoStorage)//Parse toma cadena de texto en JSON y lo transforma en objeto literal
+    listaFavoritos=JSON.parse(recuperoStorage)
 }
-// Me fijo si el id de la canción esta en la lista
-//si esta cambio el texto para sacar
-//includes servia para ver si está o no
+
 if (listaFavoritos.includes(movie_id)){
-document.querySelector(".fav").innerHTML=`<button>Agregar a Favoritos</button></a>`
+document.querySelector(".fav").innerHTML=`<button>Quitar de Favoritos</button>`
+console.log(listaFavoritos);
+}else{
+document.querySelector(".fav").innerHTML=`<button>Agregar a Favoritos</button>`
 console.log(listaFavoritos);
 }
-//Agregar a favs
+
 let agregarAFav= document.querySelector('.fav');
 agregarAFav.addEventListener('click', function(){
-    //si esta en la lista
     if (listaFavoritos.includes(movie_id)){
-        //lo localizo en array INDEXOF-->LOCALIZAR
         let sacarID= listaFavoritos.indexOf(movie_id);
-        //y lo saco SPLICE-->SACAR
         listaFavoritos.splice(sacarID, 1);
-        //Si ya lo saque --> cambio el texto de link
         agregarAFav.innerHTML=`Agregar a Favoritos`
         console.log(listaFavoritos)
     }
-    //si no esta en mi lista
    else {
-        //se agrega la canción actual
         listaFavoritos.push(movie_id);
-        //si ya lo agregué-->cambio texto 
         agregarAFav.innerHTML = `Quitar de Favoritos`
 
     }
-    //guardo el array actualizado como string
-    let trackAStorage= JSON.stringify(listaFavoritos);
-    //Guardo el string en local storage
-    localStorage.setItem('favoritosPeliculas', trackAStorage)
-    //chequeo*/
+    let Storage= JSON.stringify(listaFavoritos);
+    localStorage.setItem('favoritosPeliculas', Storage)
     console.log(localStorage)
 })
 })
