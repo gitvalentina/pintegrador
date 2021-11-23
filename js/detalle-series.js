@@ -36,13 +36,18 @@ window.addEventListener("load" , function(){
 let recuperoStorage= localStorage.getItem('favoritosSeries');
 console.log(recuperoStorage)
 
+
 if (recuperoStorage != null){
     listaFavoritos=JSON.parse(recuperoStorage)
 }
+
 if (listaFavoritos.includes(tvid)){
-document.querySelector(".fav").innerHTML=`<button>Agregar a Favoritos</button>`
+document.querySelector(".fav").innerHTML=`<button>Quitar de Favoritos </button>`
 console.log(listaFavoritos);
-}
+}else{
+    document.querySelector(".fav").innerHTML=`<button>Agregar a Favoritos</button>`
+    console.log(listaFavoritos);
+    }
 
 let agregarAFav= document.querySelector('.fav');
 agregarAFav.addEventListener('click', function(){

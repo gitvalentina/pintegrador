@@ -6,7 +6,7 @@ window.addEventListener("load" , function(){
     let peliculas1 = document.querySelector('.peliculas1')
 
 if (localStorage.getItem('favoritosSeries') != null){
-    listaFavoritos = JSON.parse(this.localStorage.getItem('favoritosSeries'));
+    listaFavoritos = JSON.parse(localStorage.getItem('favoritosSeries'));
     console.log(listaFavoritos);
     
     for(let i=0; i<listaFavoritos.length; i++){
@@ -43,7 +43,7 @@ if (localStorage.getItem('favoritosSeries') != null){
 
 
 if (localStorage.getItem('favoritosPeliculas') != null){
-    listaFavoritos = JSON.parse(this.localStorage.getItem('favoritosPeliculas'));
+    listaFavoritos = JSON.parse(localStorage.getItem('favoritosPeliculas'));
     console.log(listaFavoritos);
 
     for(let i=0; i<listaFavoritos.length; i++){
