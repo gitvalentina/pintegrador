@@ -54,4 +54,7 @@ fetch(url)
             }
         }
 
-    });
+    })
+    .catch(function( error ){
+        alert("Intentelo mas tarde")
+    })

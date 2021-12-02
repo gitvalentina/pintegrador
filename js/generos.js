@@ -9,6 +9,9 @@ fetch(url)
     })
     .then(function( resp ){
         colocarGeneros(resp);
+    })
+    .catch(function( error ){
+        alert("Intentelo mas tarde")
     });
 
 function colocarGeneros(resp){
@@ -32,6 +35,9 @@ fetch(url)
     })
     .then(function( resp ){
         colocarGenerosSeries(resp);
+    })
+    .catch(function( error ){
+        alert("Intentelo mas tarde")
     });
 
 function colocarGenerosSeries(resp){
